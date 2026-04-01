@@ -9,7 +9,7 @@ This multiplier uses a **shift-add architecture** split across pipeline stages t
 
 # 🔗 EDA Playground
 
-You can directly run the design online:
+Run the design online:
 
 👉 https://edaplayground.com/x/apPL
 
@@ -19,6 +19,24 @@ Includes:
 * Testbench
 * Waveform
 * Valid pipeline verification
+
+---
+
+# 📊 Simulation Waveform
+
+Shows 4-cycle pipeline latency and continuous throughput.
+
+<img width="1230" height="237" alt="piplinedMultWaveform" src="https://github.com/user-attachments/assets/e3fc0495-8896-455b-b1e7-8505ea5c8539" />
+
+
+---
+
+# 🖥 Digital Software Implementation
+
+Complete implementation in **Digital Logic Simulator (Helmut Hneemann)**
+
+<img width="5096" height="3316" alt="pipelinedMult" src="https://github.com/user-attachments/assets/2ddf4cff-3a22-4513-95a1-d557789dd259" />
+
 
 ---
 
@@ -50,18 +68,6 @@ Throughput = **1 result per clock**
 
 ---
 
-# 📐 Block Diagram
-
-```
-operand_a ─┐
-           ├── Stage1 ── Stage2 ── Stage3 ── Stage4 ── result
-operand_b ─┘
-
-valid_in ───────────────────────────────────► valid_out
-```
-
----
-
 # ⚙️ Interface
 
 ```verilog
@@ -90,22 +96,13 @@ Throughput: **1 multiplication per clock cycle**
 Shift-and-Add multiplication split across pipeline:
 
 Stage 2:
-
-```
 A[0..3] × B
-```
 
 Stage 3:
-
-```
 A[4..7] × B
-```
 
 Final:
-
-```
 Sum of all partial products
-```
 
 ---
 
@@ -120,29 +117,10 @@ Verified using:
 
 Example:
 
-```
 A = 15
 B = 3
 
-Output = 45
-```
-
-Pipeline output appears after 4 cycles.
-
----
-
-# 🖥 Digital Software Implementation
-
-The multiplier was also implemented in:
-
-**Digital Logic Simulator — Helmut Hneemann**
-
-Includes:
-
-* Register stages
-* Adders
-* Shift logic
-* Pipeline registers
+Output = 45 (after 4 cycles)
 
 ---
 
@@ -179,10 +157,9 @@ Includes:
 * [ ] Parameterized width
 * [ ] MAC unit
 
----
-
 # ⭐ If you like this project
 
 Star ⭐ the repository
 Fork 🍴 and improve
 Open PRs 🚀
+
