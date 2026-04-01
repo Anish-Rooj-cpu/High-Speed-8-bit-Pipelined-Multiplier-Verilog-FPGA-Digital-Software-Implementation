@@ -35,7 +35,8 @@ Shows 4-cycle pipeline latency and continuous throughput.
 
 Complete implementation in **Digital Logic Simulator (Helmut Hneemann)**
 
-<img width="5096" height="3316" alt="pipelinedMult" src="https://github.com/user-attachments/assets/2ddf4cff-3a22-4513-95a1-d557789dd259" />
+<img width="987" height="642" alt="pipelinedMult" src="https://github.com/user-attachments/assets/c359e973-b969-4694-bc95-ea0150da058b" />
+
 
 
 ---
