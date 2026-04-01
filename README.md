@@ -7,6 +7,21 @@ This multiplier uses a **shift-add architecture** split across pipeline stages t
 
 ---
 
+# 🔗 EDA Playground
+
+You can directly run the design online:
+
+👉 https://edaplayground.com/x/apPL
+
+Includes:
+
+* Verilog design
+* Testbench
+* Waveform
+* Valid pipeline verification
+
+---
+
 # ✨ Features
 
 * ✅ 8-bit × 8-bit multiplication
@@ -65,17 +80,8 @@ module pipelined_multiplier (
 
 # ⏱ Timing
 
-Latency:
-
-```
-4 clock cycles
-```
-
-Throughput:
-
-```
-1 multiplication per clock cycle
-```
+Latency: **4 clock cycles**
+Throughput: **1 multiplication per clock cycle**
 
 ---
 
@@ -138,49 +144,17 @@ Includes:
 * Shift logic
 * Pipeline registers
 
-This makes it useful for:
-
-* FPGA learning
-* Computer architecture labs
-* DSP pipeline design
-* Digital system design
-
 ---
 
 # 📁 Repository Structure
 
 ```
-├── pipelined_multiplier.v
+├── RTL/
+    └── pipelined_multiplier.dig
 ├── testbench.v
 ├── digital/
 │   └── pipelined_multiplier.dig
 └── README.md
-```
-
----
-
-# 🚀 Performance Advantages
-
-Compared to combinational multiplier:
-
-| Feature       | Pipelined | Combinational    |
-| ------------- | --------- | ---------------- |
-| Clock Speed   | High      | Low              |
-| Latency       | 4 cycles  | 1 cycle          |
-| Throughput    | 1/cycle   | 1 per long delay |
-| Critical Path | Short     | Long             |
-
----
-
-# 📊 Pipeline Timing
-
-```
-Cycle 1 : Input A0,B0
-Cycle 2 : Stage2
-Cycle 3 : Stage3
-Cycle 4 : Output valid
-
-Then one result every clock
 ```
 
 ---
@@ -192,7 +166,6 @@ Then one result every clock
 * MAC units
 * FPGA accelerators
 * CPU ALU design
-* Hardware multipliers
 * Digital signal processing
 
 ---
@@ -207,6 +180,7 @@ Then one result every clock
 * [ ] MAC unit
 
 ---
+
 # ⭐ If you like this project
 
 Star ⭐ the repository
