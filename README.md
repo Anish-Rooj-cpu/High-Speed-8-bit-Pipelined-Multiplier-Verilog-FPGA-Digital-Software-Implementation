@@ -207,15 +207,6 @@ Then one result every clock
 * [ ] MAC unit
 
 ---
-
-# 👨‍💻 Author
-
-Anish Rooj
-Electronics & Telecommunication Engineering
-Jadavpur University
-
----
-
 # ⭐ If you like this project
 
 Star ⭐ the repository
