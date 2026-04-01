@@ -212,9 +212,3 @@ Then one result every clock
 Star ⭐ the repository
 Fork 🍴 and improve
 Open PRs 🚀
-
----
-
-# 📜 License
-
-MIT License
